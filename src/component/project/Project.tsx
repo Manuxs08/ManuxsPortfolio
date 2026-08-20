@@ -19,9 +19,8 @@ const Project = () => {
                 data.filter(element => element.id == id).map((element,key) =>
                     {
                         let image = "/image/"+element.image
-                        let key_s: string = ""+key
                         return(
-                            <div id={key_s}>
+                            <div key={key}>
                                 <div className='project_header'>
                                     <img src={image} />
                                     <div>
@@ -37,10 +36,10 @@ const Project = () => {
                                         <h1>Videos</h1>
                                         <div className='project_videos'>
                                             {
-                                                element.videos.map((video: string) => {
+                                                element.videos.map((video: string, key: number) => {
                                                     let video_src = "/video/"+video
                                                     return(
-                                                        <video width='900px' loop autoPlay muted src={video_src}/>
+                                                        <video key={key} loop autoPlay muted src={video_src}/>
                                                     )
                                                 })
                                             }

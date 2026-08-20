@@ -3,7 +3,12 @@
     "id": "senpai",
     "title": "Notice Me Senpai",
     "image": "senpai.jpg",
-    "description": "Evento de Crysis Studio",
+    "description": "Evento creado por [Insertar Texto] Studio inspirado en el videojuego \"Yandere Simulator\".",
+    "tags": [
+      "Fabric",
+      "Mod",
+      "1.20.1"
+    ],
     "videos": [
       "senpai_1.mp4",
       "senpai_2.mp4"
@@ -14,6 +19,17 @@
     "title": "Adios",
     "image": "hero.png",
     "description": "Hola mamá",
+    "tags": [
+    ],
+    "videos": []
+  },
+  {
+    "id": "event3",
+    "title": "Adios",
+    "image": "hero.png",
+    "description": "Hola mamá",
+    "tags": [
+    ],
     "videos": []
   }
 ]
