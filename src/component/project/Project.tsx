@@ -16,17 +16,37 @@ const Project = () => {
     return (
         <main>
             {
-                data.filter(element => element.id == id).map(element =>
+                data.filter(element => element.id == id).map((element,key) =>
                     {
                         let image = "/image/"+element.image
+                        let key_s: string = ""+key
                         return(
-                            <div className='project_header'>
-                                <img src={image} />
-                                <div>
-                                    <h1>{element.title}</h1>
-                                    <hr/>
-                                    <p>{element.description}</p>
+                            <div id={key_s}>
+                                <div className='project_header'>
+                                    <img src={image} />
+                                    <div>
+                                        <h1>{element.title}</h1>
+                                        <hr/>
+                                        <p>{element.description}</p>
+                                    </div>
                                 </div>
+                                {
+                                    element.videos.length > 0 &&
+
+                                    <div className='project_videos_container'>
+                                        <h1>Videos</h1>
+                                        <div className='project_videos'>
+                                            {
+                                                element.videos.map((video: string) => {
+                                                    let video_src = "/video/"+video
+                                                    return(
+                                                        <video width='900px' loop autoPlay muted src={video_src}/>
+                                                    )
+                                                })
+                                            }
+                                        </div>
+                                    </div>
+                                }
                             </div>
                         )
                     }

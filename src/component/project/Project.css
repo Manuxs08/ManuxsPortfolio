@@ -10,3 +10,17 @@
         width: 100%;
     }
 }
+.project_videos_container{
+    margin-top: 70px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project_videos{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

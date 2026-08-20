@@ -4,7 +4,10 @@
     "title": "Notice Me Senpai",
     "image": "senpai.jpg",
     "description": "Evento de Crysis Studio",
-    "videos": []
+    "videos": [
+      "senpai_1.mp4",
+      "senpai_2.mp4"
+    ]
   },
   {
     "id": "event2",
