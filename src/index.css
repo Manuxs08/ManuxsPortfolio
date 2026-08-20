@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Octosquares";
+  src: url("/public/fonts/TT_Octosquares_Trial_ExtraLight.ttf") format('truetype');
+}
+
+:root{
+  --bg-color: #1C0D06;
+
+  background: var(--bg-color);
+  font-family: "Octosquares";
+}

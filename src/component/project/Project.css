@@ -1,0 +1,12 @@
+
+.project_header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+    img{
+        width: 700px;
+    }
+    hr{
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "senpai",
+    "title": "Notice Me Senpai",
+    "image": "senpai.jpg",
+    "description": "Evento de Crysis Studio",
+    "videos": []
+  },
+  {
+    "id": "event2",
+    "title": "Adios",
+    "image": "hero.png",
+    "description": "Hola mamá",
+    "videos": []
+  }
+]
