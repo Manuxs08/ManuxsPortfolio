@@ -8,6 +8,7 @@ import DotField from "../DotField.tsx"
 const Landing = () => {
     const [projects_data,setProjectData] = useState<any[]>([])
     const [exp_data,setExpData] = useState<any[]>([])
+    const [contact_data,setContactData] = useState<any[]>([])
 
     useEffect(() => {
         fetch('/db/projects.json')
@@ -17,10 +18,15 @@ const Landing = () => {
         fetch('/db/experience.json')
             .then((response) => response.json())
             .then((data) => setExpData(data))
+
+        fetch('/db/contacts.json')
+            .then((response) => response.json())
+            .then((data) => setContactData(data))
     },[])
 
     return (
         <>
+            <img id='animated_logo' src={manuxs} />
             <div style={{ zIndex:"-1", width: '100%', height: '100%', position: 'fixed', top:'0' }}>
                 <DotField
                     dotRadius={3}
@@ -37,22 +43,34 @@ const Landing = () => {
                     glowColor="#1C0D06"
                 />
             </div>
-            <main>
+            <main id='landing'>
                 <div id='header_container'>
-                    <img src={manuxs}></img>
+                    <img id='manuxs' src={manuxs}></img>
                     <div id='header_text'>
-                        <h1 className='font-bold text-4xl mb-6'>
+                        <h1 className='flex font-bold items-center mb-6'>
                             <TypeAnimation
+                                speed={1}
                                 sequence={[
+                                    /*1500,*/
                                     "Hola, soy Manuxs"
                                 ]}
                             />
+                            {
+                                contact_data.map((red,key) => {
+                                    let image = "/image/"+red.image
+                                    return(
+                                        <a href={red.link} target='_blank' className='contacts mx-3'>
+                                            <img alt={red.name} src={image} key={key}></img>
+                                        </a>
+                                    )
+                                })
+                            }
                         </h1>
-                        <p className='text-1xl' >Soy un desarrollador activo de Mods y Plugins de Minecraft con bastante experiencia en programación y administración de servidores. Dispuesto a cumplir cualquier trabajo que se me pida realizar de la mejor forma.</p>
+                        <p>Soy un desarrollador activo de Mods y Plugins de Minecraft con bastante experiencia en programación y administración de servidores. Dispuesto a cumplir de la mejor forma cualquier trabajo que se me pida realizar.</p>
                     </div>
                 </div>
                 <div id='exp_container'>
-                    <h2 className='mb-8 text-2xl font-bold' >Cuento con experiencia en:</h2>
+                    <h2 className='mb-8 text-2xl font-bold' >Tengo experiencia en:</h2>
                     <div id='exp_items'>
                         {
                             exp_data.map((exp,key) => {

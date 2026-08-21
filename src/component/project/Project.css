@@ -1,6 +1,5 @@
 
 .project_header{
-    border: 2px red solid;
     display: grid;
     column-gap: 50px;
     row-gap: 10px;

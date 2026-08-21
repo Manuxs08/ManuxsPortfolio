@@ -3,7 +3,7 @@
     "id": "senpai",
     "title": "Notice Me Senpai",
     "image": "senpai.jpg",
-    "description": "Evento creado por [Insertar Texto] Studio inspirado en el videojuego \"Yandere Simulator\".",
+    "description": "Evento creado por Elysis Creative, inspirado en el videojuego \"Yandere Simulator\".",
     "tags": [
       "Fabric",
       "Mod",
@@ -15,20 +15,27 @@
     ]
   },
   {
-    "id": "event2",
-    "title": "Adios",
-    "image": "hero.png",
-    "description": "Hola mamá",
+    "id": "simpson",
+    "title": "Operation Springfield",
+    "image": "simpson.png",
+    "description": "Evento competitivo inspirado en la icónica serie \"Los Simpson\".",
     "tags": [
+      "Fabric",
+      "Mod",
+      "1.21.1"
     ],
     "videos": []
   },
   {
-    "id": "event3",
-    "title": "Adios",
-    "image": "hero.png",
-    "description": "Hola mamá",
+    "id": "lifesteal",
+    "title": "Lifesteal Amethyst",
+    "image": "lifesteal.png",
+    "description": "Serie de supervivencia extrema con cambios de dificultad y pvp entre jugadores.",
     "tags": [
+      "Paper",
+      "Spigot",
+      "Plugin",
+      "26.1.2"
     ],
     "videos": []
   }
