@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Java",
+    "image": "java.svg"
+  },
+  {
+    "name": "Fabric",
+    "image": "fabric.svg"
+  },
+  {
+    "name": "Forge",
+    "image": "forge.svg"
+  },
+  {
+    "name": "Paper/Spigot",
+    "image": "paper.svg"
+  },
+  {
+    "name": "React",
+    "image": "react.svg"
+  }
+]

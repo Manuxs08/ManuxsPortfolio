@@ -7,15 +7,30 @@ const ProjectCard = (props: any) => {
     let description = props.description
     let id: string = props.id
     let project_link = "/project/"+id
+    let tags: Array<string> = props.tags
     return (
         <div className='card'>
-            <Link to={project_link}>
+            <Link className='image_container' to={project_link}>
                 <img width='300px' src={image} />
+                <div>Click para más info</div>
             </Link>
             <div className='desc_container'>
-                <div>{title}</div>
-                <hr/>
-                <div>{description}</div>
+                <div className='title' >{title}</div>
+                <hr className='mb-5' />
+                <div className='description' >{description}</div>
+                {
+                    tags.length > 0 &&
+                    <div className='tag_section'>
+                        <hr className='mb-2' />
+                        <div className='tag_container'>
+                            {
+                                tags.map((tag, key) => (
+                                    <div key={key}>{tag}</div>
+                                ))
+                            }
+                        </div>
+                    </div>
+                }
             </div>
         </div>
     )
