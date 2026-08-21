@@ -1,11 +1,33 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Octosquares";
   src: url("/public/fonts/TT_Octosquares_Trial_ExtraLight.ttf") format('truetype');
 }
 
 :root{
-  --bg-color: #1C0D06;
+  --bg-color: #120408;
 
-  background: var(--bg-color);
+  background: linear-gradient(var(--bg-color), black) no-repeat fixed;
   font-family: "Octosquares";
+  /*animation-name: scroll;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;*/
+}
+
+@keyframes scroll {
+  0%{
+    overflow: hidden;
+  }
+  99%{
+    overflow: hidden;
+  }
+  100%{
+    overflow: visible;
+  }
 }
