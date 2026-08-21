@@ -24,7 +24,12 @@
       "Mod",
       "1.21.1"
     ],
-    "videos": []
+    "videos": [
+      "simpson_1.mp4",
+      "simpson_2.mp4",
+      "simpson_3.mp4",
+      "simpson_4.mp4"
+    ]
   },
   {
     "id": "lifesteal",
@@ -37,6 +42,10 @@
       "Plugin",
       "26.1.2"
     ],
-    "videos": []
+    "videos": [
+      "lifesteal_1.mp4",
+      "lifesteal_2.mp4",
+      "lifesteal_3.mp4"
+    ]
   }
 ]
