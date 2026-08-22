@@ -35,10 +35,9 @@
     "id": "lifesteal",
     "title": "Lifesteal Amethyst",
     "image": "lifesteal.png",
-    "description": "Serie de supervivencia extrema con cambios de dificultad y pvp entre jugadores.",
+    "description": "Serie de supervivencia con temática de amatista en donde hay cambios de dificultad y pvp entre jugadores.",
     "tags": [
       "Paper",
-      "Spigot",
       "Plugin",
       "26.1.2"
     ],

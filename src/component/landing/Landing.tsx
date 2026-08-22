@@ -26,7 +26,7 @@ const Landing = () => {
 
     return (
         <>
-            <img id='animated_logo' src={manuxs} />
+            <img loading="lazy" id='animated_logo' src={manuxs} />
             <div style={{ zIndex:"-1", width: '100%', height: '100%', position: 'fixed', top:'0' }}>
                 <DotField
                     dotRadius={3}
@@ -45,9 +45,9 @@ const Landing = () => {
             </div>
             <main id='landing'>
                 <div id='header_container'>
-                    <img id='manuxs' src={manuxs}></img>
+                    <img loading='lazy' alt="manuxs_icon" id='manuxs' src={manuxs}></img>
                     <div id='header_text'>
-                        <h1 className='flex font-bold items-center mb-6'>
+                        <h1 id='name_text' className='font-bold mb-6'>
                             <TypeAnimation
                                 speed={1}
                                 sequence={[
@@ -55,16 +55,18 @@ const Landing = () => {
                                     "Hola, soy Manuxs"
                                 ]}
                             />
-                            {
-                                contact_data.map((red,key) => {
-                                    let image = "/image/"+red.image
-                                    return(
-                                        <a href={red.link} target='_blank' className='contacts mx-3'>
-                                            <img alt={red.name} src={image} key={key}></img>
-                                        </a>
-                                    )
-                                })
-                            }
+                            <div id='contacts_container' >
+                                {
+                                    contact_data.map((red,key) => {
+                                        let image = "/image/"+red.image
+                                        return(
+                                            <a href={red.link} target='_blank' className='contact'>
+                                                <img loading='lazy' alt={red.name} src={image} key={key}></img>
+                                            </a>
+                                        )
+                                    })
+                                }
+                            </div>
                         </h1>
                         <p>Soy un desarrollador activo de Mods y Plugins de Minecraft con bastante experiencia en programación y administración de servidores. Dispuesto a cumplir de la mejor forma cualquier trabajo que se me pida realizar.</p>
                     </div>
@@ -77,7 +79,7 @@ const Landing = () => {
                                 let image = "/image/"+exp.image
                                 return(
                                     <div className='exp_item' key={key}>
-                                        <img className='mb-4' src={image} width='100px' />
+                                        <img loading="lazy" alt={exp.image} className='mb-4' src={image} width='100px' />
                                         <h2>{exp.name}</h2>
                                     </div>
                                 )

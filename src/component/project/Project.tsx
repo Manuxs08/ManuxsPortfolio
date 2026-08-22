@@ -40,8 +40,8 @@ const Project = () => {
                             return(
                                 <div key={key}>
                                     <div className='project_header'>
-                                        <img src={image} />
-                                        <div className='h-full py-10'>
+                                        <img className='anim_1' loading='lazy' alt={element.image} src={image} />
+                                        <div className='h-full py-10 anim_2'>
                                             <h1 className='text-3xl font-bold' >{element.title}</h1>
                                             <hr className='mb-6 mt-2' />
                                             <p className='text-2xl' >{element.description}</p>
@@ -51,8 +51,8 @@ const Project = () => {
                                         element.videos.length > 0 &&
 
                                         <div className='project_videos_container'>
-                                            <h1 className='text-4xl font-bold mb-10' >Videos</h1>
-                                            <div className='project_videos'>
+                                            <h1 className='text-4xl font-bold mb-10 anim_2' >Videos</h1>
+                                            <div className='project_videos anim_3'>
                                                 {
                                                     element.videos.map((video: string, key: number) => {
                                                         let video_src = "/video/"+video

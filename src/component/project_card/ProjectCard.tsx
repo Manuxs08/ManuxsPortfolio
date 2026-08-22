@@ -10,8 +10,8 @@ const ProjectCard = (props: any) => {
     let tags: Array<string> = props.tags
     return (
         <div className='card'>
-            <Link className='image_container' to={project_link}>
-                <img width='300px' src={image} />
+            <Link onClick={() => window.scrollTo(0,0)} className='image_container' to={project_link}>
+                <img loading="lazy" alt={props.image} width='300px' src={image} />
                 <div>Click para más info</div>
             </Link>
             <div className='desc_container'>
