@@ -24,19 +24,27 @@
       "Mod",
       "1.21.1"
     ],
-    "videos": []
+    "videos": [
+      "simpson_1.mp4",
+      "simpson_2.mp4",
+      "simpson_3.mp4",
+      "simpson_4.mp4"
+    ]
   },
   {
     "id": "lifesteal",
     "title": "Lifesteal Amethyst",
     "image": "lifesteal.png",
-    "description": "Serie de supervivencia extrema con cambios de dificultad y pvp entre jugadores.",
+    "description": "Serie de supervivencia con temática de amatista en donde hay cambios de dificultad y pvp entre jugadores.",
     "tags": [
       "Paper",
-      "Spigot",
       "Plugin",
       "26.1.2"
     ],
-    "videos": []
+    "videos": [
+      "lifesteal_1.mp4",
+      "lifesteal_2.mp4",
+      "lifesteal_3.mp4"
+    ]
   }
 ]

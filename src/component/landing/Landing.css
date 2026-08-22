@@ -34,6 +34,10 @@ main{
     padding: 20px 20px;
     gap: 30px;
     max-width: 100%;
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
     #manuxs{
         border-radius: 50%;
     }
@@ -44,7 +48,18 @@ main{
     text-align: left;
     width: clamp(0%,100%,700px);
 }
-.contacts{
+#name_text{
+    display: flex;
+    align-items: center;
+    row-gap: 15px;
+}
+#contacts_container{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
     align-content: center;
     justify-content: center;
     img{
@@ -52,7 +67,7 @@ main{
     }
     transition: transform ease-in-out .2s;
 }
-.contacts:hover{
+.contact:hover{
     transform: scale(1.2);
 }
 #exp_container{
@@ -77,6 +92,7 @@ main{
     row-gap: 70px;
     column-gap: 70px;
     width: 100%;
+    font-size: 20px;
     div{
         transition: ease-in-out .2s;
     }
@@ -163,26 +179,27 @@ main{
 
 @media (max-width: 600px) {
     #header_container{
-        h1{
-            font-size: 25px;
-        }
         p{
+            text-align: justify;
             font-size: 16px;
         }
         #manuxs{
             width: 200px;
         }
     }
-    .contacts{
-        width: 60px;
-        height: 60px;
+    #contacts_container{
+        gap: 45px;
+    }
+    .contact{
+        width: 45px;
+        height: 45px;
+    }
+    #name_text{
+        flex-direction: column;
     }
 }
 @media (min-width: 600px) {
     #header_container{
-        h1{
-            font-size: 30px;
-        }
         p{
             font-size: 17px;
         }
@@ -190,16 +207,19 @@ main{
             width: 200px;
         }
     }
-    .contacts{
+    #contacts_container{
+        gap: 25px;
+    }
+    .contact{
         width: 50px;
         height: 50px;
+    }
+    #name_text{
+        flex-direction: row;
     }
 }
 @media (min-width: 1200px) {
     #header_container{
-        h1{
-            font-size: 35px;
-        }
         p{
             font-size: 18px;
         }
@@ -207,8 +227,14 @@ main{
             width: 300px;
         }
     }
-    .contacts{
-        width: 40px;
-        height: 40px;
+    #contacts_container{
+        gap: 25px;
+    }
+    .contact{
+        width: 45px;
+        height: 45px;
+    }
+    #name_text{
+        flex-direction: row;
     }
 }
